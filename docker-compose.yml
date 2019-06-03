@@ -1,0 +1,25 @@
+version: "2"
+services:
+  eureka-service:
+    build: ./eureka-server
+    network_mode: host
+
+
+  gateway:
+    build: ./api
+    network_mode: host
+
+
+  track-service:
+    build: ./track-service
+    network_mode: host
+
+
+  user-service:
+    build: ./user-service
+    network_mode: host
+
+
+  config-server:
+    build: ./config-server
+    network_mode: host

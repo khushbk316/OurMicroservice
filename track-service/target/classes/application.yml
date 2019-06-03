@@ -1,0 +1,23 @@
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://172.23.239.76:8761/eureka/
+
+spring:
+  application:
+    name: track-service
+
+
+  data:
+    mongodb:
+      repositories:
+        enabled: true
+      host: localhost
+
+logging:
+  level:
+    com.stackroute: DEBUG
+
+driverClassName: com.mongodb.jdbc.MongoDriver
